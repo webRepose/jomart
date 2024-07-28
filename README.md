@@ -1,1 +1,1 @@
-https://jomartjurek.vercel.app/
+[https://jomartjurek.vercel.app/](https://jomart.vercel.app/)
