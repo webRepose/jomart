@@ -1,0 +1,157 @@
+.newsItem {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+
+  &_social {
+    display: block;
+    width: min-content;
+    margin-right: 40px;
+
+    svg {
+      margin-bottom: 10px;
+      border-radius: 30%;
+      height: 50px;
+      width: 50px;
+    }
+
+    &_mobile {
+      display: none;
+
+      svg {
+        border-radius: 30%;
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+  &_news {
+    width: 749px;
+
+    &_time {
+      font-size: var(--font20);
+    }
+
+    &_theme {
+      margin-top: 20px;
+      font-size: var(--font28);
+      font-weight: 500;
+    }
+
+    &_line {
+      border: 1px solid #9bc1bc;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    &_desk {
+      font-size: var(--font22);
+      margin-bottom: 40px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_lastNews {
+    width: 250px;
+    margin-left: 40px;
+
+    h3 {
+      color: #0d6efd;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--text);
+    }
+
+    article {
+      border-bottom: 1px solid #9bc1bc;
+      padding-bottom: 20px;
+      padding-top: 20px;
+
+      h4 {
+        line-height: 1;
+        margin-bottom: 15px;
+        font-size: var(--font18);
+      }
+
+      time {
+        font-size: var(--font14);
+      }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .newsItem {
+    &_social {
+      display: none;
+
+      &_mobile {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .newsItem {
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 30px;
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    &_lastNews {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .newsItem {
+    &_news {
+      &_desk {
+        font-size: var(--font20);
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .newsItem {
+    &_news {
+      &_desk {
+        font-size: var(--font18);
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .newsItem {
+    &_social {
+      &_mobile {
+        svg {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

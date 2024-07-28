@@ -1,0 +1,149 @@
+.news {
+  width: 100%;
+  color: var(--text);
+
+  a {
+    color: var(--text);
+  }
+
+  &_flag {
+    display: flex;
+    align-items: end;
+  }
+
+  &_title {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-weight: 300;
+      font-size: var(--font45);
+    }
+
+    &_first {
+      display: flex;
+      align-items: end;
+    }
+
+    &_second {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &_second_social {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &_block {
+    max-width: 1300px;
+    margin: 0 auto;
+    border-top: 1px solid #9bc1bc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &_block_item {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+
+    border-bottom: 1px solid #9bc1bc;
+
+    &_theme {
+      width: 80%;
+      padding-right: 40px;
+      display: grid;
+
+      h3 {
+        font-weight: 400;
+        font-size: var(--font28);
+        margin-bottom: 20px;
+      }
+
+      time {
+        color: #b7b7b7;
+        margin-bottom: 10px;
+      }
+    }
+
+    &_img {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      img {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .news {
+    &_block {
+      margin-bottom: 20px;
+    }
+    &_block,
+    &_title {
+      max-width: 90%;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .news {
+    &_block_item {
+      display: block;
+
+      &_theme {
+        width: 100%;
+        padding: 0;
+      }
+
+      &_img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        img {
+          width: auto;
+          max-height: 224px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .news {
+    &_title {
+      display: block;
+
+      &_second {
+        justify-content: start;
+        align-items: end;
+        margin-top: 20px;
+      }
+    }
+
+    &_block {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .news {
+    &_block_item_theme h3 {
+      font-size: var(--font20);
+      font-weight: 500;
+    }
+  }
+}

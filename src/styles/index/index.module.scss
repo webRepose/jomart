@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--body_bg);
+  height: 100svh;
+  scroll-behavior: smooth;
+  color: var(--text);
+  font-family: Segoe UI, Montserrat, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #686868;
+  border-radius: 1.17vw;
+}
+
+:root {
+  --radius10: 10px;
+  --radius15: 15px;
+  --radius17: 17px;
+  --radius20: 20px;
+  --radius25: 25px;
+  --radius50p: 50%;
+  --font45: 45px;
+  --font28: 28px;
+  --font24: 24px;
+  --font22: 22px;
+  --font21: 21px;
+  --font20: 20px;
+  --font19: 19px;
+  --font18: 18px;
+  --font17: 17px;
+  --font16: 16px;
+  --font15: 15px;
+  --font14: 14px;
+  --paddingHome: 38px 20px;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  border: 0;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100svh - 67.5px);
+}
+
+img {
+  pointer-events: none;
+}
+
+p,
+h4,
+h3,
+h1,
+h2,
+h6,
+h5 {
+  color: var(--text);
+}
+
+select option {
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  main {
+    min-height: calc(100svh - 170px);
+  }
+}
