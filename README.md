@@ -1,1 +1,2 @@
-[https://jomartjurek.vercel.app/](https://jomart.vercel.app/)
+Информационное веб-приложение с поддержкой для людей с ограниченными возможностями.
+Стэк: React, Firebase, SCSS, i18n
